@@ -1,0 +1,120 @@
+@font-face {
+  font-family: 'Mile Heights';
+  src: url(./fonts/mileheights.otf);
+}
+
+@font-face {
+  font-family: 'Now Light';
+  src: url(./fonts/now-light.otf);
+}
+
+@font-face {
+  font-family: 'Now Regular';
+  src: url(./fonts/noe-regular.otf);
+}
+
+@font-face {
+  font-family: 'Now Bold';
+  src: url(./fonts/now-bold.otf);
+}
+
+:root {
+  --mile: 'Mile Heights';
+  --now-light: 'Now Light';
+  --now-regular: 'Now Regular';
+  --now-bold: 'Now Bold';
+  --black: #0D0D0D;
+  --grey: #555555;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--now-light);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--mile);
+}
+
+p {
+  line-height: 1.6em;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  color: var(--black);
+  display: flex;
+  align-items: center;
+  position: relative
+}
+
+.btn::after {
+  content: '';
+  display: block;
+  width: 30%;
+  height: 2px;
+  background-color: var(--black);
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transition: width 0.3s;
+}
+
+.btn:hover::after {
+  width: 90%;
+}
+
+.btn__more {
+  font-family: var(--now-regular);
+  display: block;
+  font-size: 17px;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.75em;
+  background: #000000;
+  cursor: pointer;
+}
+
+.button__top {
+  display: block;
+  box-sizing: border-box;
+  border: 2px solid #000000;
+  border-radius: 0.75em;
+  padding: 0.75em 1.5em;
+  background: #f0f0f0;
+  color: #000000;
+  transform: translateY(-0.2em);
+  transition: transform 0.1s ease;
+}
+
+.btn__more:hover .button__top {
+  transform: translateY(-0.33em);
+}
+
+.btn__more:active .button__top {
+  transform: translateY(0);
+}
+
+section {
+  padding: 0 15px;
+}
