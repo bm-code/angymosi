@@ -25,6 +25,7 @@
   --now-bold: 'Now Bold';
   --black: #0D0D0D;
   --grey: #555555;
+  --grey-bg: #FAFAFD
 }
 
 * {
@@ -117,4 +118,21 @@ a {
 
 section {
   padding: 0 15px;
+}
+
+/* Headings */
+.section-heading {
+  width: 100%;
+  text-align: center;
+}
+
+.section-heading__title {
+  font-size: 46px;
+  margin: 30px auto;
+}
+
+.section-heading__description {
+  margin-top: 20px;
+  margin: 20px auto 0;
+  max-width: 340px;
 }

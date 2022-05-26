@@ -1,14 +1,12 @@
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 import Inicio from "./pages/Inicio";
-import Portfolio from "./pages/Portfolio";
 
 function App() {
   return (
-    <div>
+    <>
       <Header />
-      <Inicio />
-      <Portfolio />
-    </div>
+    </>
   );
 }
 

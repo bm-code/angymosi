@@ -1,0 +1,17 @@
+.single-portfolio {
+    padding: 0;
+}
+
+.single-portfolio__categories ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 15px 0;
+}
+
+.single-portfolio__gallery-first,
+.single-portfolio__gallery-second {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
